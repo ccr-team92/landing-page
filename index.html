@@ -24,9 +24,7 @@
         height: 100%;
         font-family: "Dosis", sans-serif;
       }
-      body {
-        top: 0;
-        left: 0;
+      html {
         background: rgb(254, 18, 67);
         background: linear-gradient(
           90deg,
@@ -34,6 +32,13 @@
           rgba(254, 131, 66, 1) 50%,
           rgba(249, 182, 16, 1) 100%
         );
+      }
+      body {
+        top: 0;
+        left: 0;
+        background: url(young.png) no-repeat;
+        background-size: contain;
+        background-position: bottom right;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -48,6 +53,7 @@
       @media (max-width: 600px) {
         body {
           padding-right: 5vw;
+          background-position: 40vw bottom;
         }
       }
 
